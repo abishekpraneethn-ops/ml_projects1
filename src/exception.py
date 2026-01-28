@@ -1,9 +1,5 @@
 import sys
 import traceback
-import logging
-from logger import get_logger
-
-logger = get_logger(__name__)
 
 def error_message_detail(error, error_detail: sys):
     """
@@ -34,14 +30,3 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
 
-if __name__ == "__main__":
-    import sys
-
-    def test_exception():
-        try:
-            a = 10 / 0
-        except Exception as e:
-            logger.info("Divide by zero error")
-            raise CustomException(e, sys)
-
-    test_exception()
