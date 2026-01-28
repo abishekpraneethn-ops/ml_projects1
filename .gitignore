@@ -2,7 +2,8 @@
 venv/
 .env/
 .conda/
-
+.artifacts
+.logs
 # Python cache
 __pycache__/
 *.pyc
