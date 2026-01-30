@@ -4,6 +4,7 @@ venv/
 .conda/
 
 # Build / artifacts
+catboost_info/
 artifacts/
 logs/
 
